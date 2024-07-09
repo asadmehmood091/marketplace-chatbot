@@ -36,7 +36,7 @@ function generateResponse(message) {
   if (tokens.includes("contact") && tokens.includes("support")) {
     return "You can contact our support team by emailing support@marketplace.com or calling +1234567890. Our support hours are from 9 AM to 5 PM, Monday to Friday.";
   }
-  if (tokens.includes("faq")) {
+  if (tokens.includes("faq") || tokens.includes("faqs")) {
     return "Here are some frequently asked questions:\n1. How do I track my order?\n2. How do I return a product?\n3. How do I contact support?\n4. How do I change my account details?\n5. What payment methods are accepted?";
   }
   if (tokens.includes("support")) {
